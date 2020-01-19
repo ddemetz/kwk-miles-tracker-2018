@@ -1,0 +1,519 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>kwk miles!</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Homemade+Apple|PT+Sans+Narrow" rel="stylesheet">
+		
+		<style>
+		     body {
+	 text-align: center;
+	 background-color: #d5ede9
+        }
+        
+        wrapper{
+            width:70%;
+        }
+        
+        
+        h1 {
+            color: #303030;
+			font-family: 'Homemade Apple', cursive;
+			font-size: 190%;
+        }
+
+
+        .ticketText:hover{
+           opacity: .8;
+           transition: .3s;
+        }
+        
+        
+        p {
+            font-size: 110%;
+			font-family: 'PT Sans Narrow', sans-serif;
+			padding-top: 5em;
+			color: white;
+        }
+ 
+        h2 {
+            font-family: 'Varela Round', sans-serif;
+		
+        }
+
+select{
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding-bottom: 1em;
+	font-size: 1em;
+}
+
+.title{
+	padding-top:1em;
+}
+
+.selector{
+	padding-bottom: 10em;
+}
+/*
+img{
+	position: absolute;
+	z-index: -10;
+	text-align: center;
+}
+*/
+
+table{
+	margin-left:auto;
+	margin-right:auto;
+}
+
+td{
+    margin: 1em;
+    width: 13%;
+}
+
+#sesh1{
+	height: 15em;
+	background: url("https://static.tumblr.com/weyiada/aVMpm2hzm/1.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#sesh2{
+	height: 15em;
+	background: url("https://static.tumblr.com/weyiada/j6tpm2hzo/2.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+#sesh3{
+	height: 15em;
+	background: url("https://static.tumblr.com/weyiada/Rahpm2hzq/3.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#sesh4{
+	height: 15em;
+	background: url("https://static.tumblr.com/weyiada/6Hqpm2hzr/4.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#sesh5{
+	height: 15em;
+	background: url("https://static.tumblr.com/weyiada/QIBpm2hzs/5.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+#home{
+	height: 15em;
+	background: url("https://static.tumblr.com/weyiada/TYCpm2hzu/6.png"); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+}
+
+.logo{
+	width:40%;
+	margin-top:1em;
+}
+
+.bp{
+            /*background: url("img/bp.png"); */
+            /*width:100%;*/
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            /*min-height:225px;*/
+            /*max-height:600px;*/
+            /*position: absolute;*/
+            /*background-size:contain;*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: center center;   */
+            text-align: center;
+}
+
+/*.ticketText{*/
+/*background: url("img/bp.png"); */
+/*background-size:contain;*/
+/*width: 90%;*/
+/*height: 210px;*/
+/*            background-repeat: no-repeat;*/
+/*            background-position: center center;*/
+/*            margin-left: auto;*/
+/*            margin-right: auto;*/
+/*            padding-top:5em;*/
+/*            padding-left: 1em;*/
+/*            padding-right: 7em;*/
+/*    color: #29720A;*/
+    
+/*}*/
+
+button{
+    background: url("https://static.tumblr.com/weyiada/BEdpm2ifi/bp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    min-height:220px;
+    width:80%;
+    margin-top: 2em;
+    font-family: 'Varela Round', sans-serif;
+    color: #29720A;
+    font-size:90%;
+    padding-right:10em;
+    padding-left:5em;
+    
+    
+}
+
+button:hover{
+    opacity:.6;
+    transition: .3s;
+}
+
+.mobile{
+    display:none;
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+/*@media only screen and (max-width: 1000px){*/
+    .mobile{
+        display: block;
+    }
+    
+    .desktop{
+        display:none;
+    }
+    
+    .logo{
+        width: 80%;
+    }
+    
+  #sesh1{
+height:700px;
+}
+
+#sesh2{
+height:700px;
+}
+#sesh3{
+height:700px;
+}
+
+#sesh4{
+height:700px;
+}
+
+#sesh5{
+height:700px;
+}
+
+#home{
+height:700px;
+}
+
+p{
+    font-size: 300%;
+}
+
+select{
+    width: 40%;
+    font-size: 400%;
+}
+
+button{
+    background: url("img/bp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    min-height:420px;
+    width:100%;
+    margin-top: 2em;
+    font-family: 'Varela Round', sans-serif;
+    color: #29720A;
+    font-size:150%;
+    padding-right:10em;
+    padding-left:5em;
+    
+    
+}
+
+
+}
+
+
+@media only screen and (max-width: 680px){
+    .mobile{
+        display: block;
+    }
+    
+    .desktop{
+        display:none;
+    }
+    
+    .logo{
+        width: 80%;
+    }
+    
+  #sesh1{
+height:700px;
+}
+
+#sesh2{
+height:700px;
+}
+#sesh3{
+height:700px;
+}
+
+#sesh4{
+height:700px;
+}
+
+#sesh5{
+height:700px;
+}
+
+#home{
+height:700px;
+}
+
+p{
+    font-size: 300%;
+}
+
+select{
+    width: 40%;
+    font-size: 400%;
+}
+
+button{
+    background: url("https://static.tumblr.com/weyiada/BEdpm2ifi/bp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: none;
+    min-height:420px;
+    width:100%;
+    margin-top: 2em;
+    font-family: 'Varela Round', sans-serif;
+    color: #29720A;
+    font-size:150%;
+    padding-right:10em;
+    padding-left:5em;
+    
+    
+}
+
+
+}
+		</style>
+		
+		
+    </head>
+    <body>
+        <wrapper>
+		<img src="https://static.tumblr.com/weyiada/2VXpm2hzw/logo.png" alt="logo" class="logo">
+		<div class="tablediv">
+		<table class="desktop" width="80%">
+  <tbody>
+    <tr>
+      <td width="13%"><div id="home">
+			<p>Where are you from?</p>
+			<select id="homeCity" class="selector">
+    			<option value="New York">New York</option>
+          		<option value="Chicago">Chicago</option>
+          		<option value="Los Angeles" selected>Los Angeles</option>
+          		<option value="St. Louis">St. Louis</option>
+          		<option value="Austin">Austin</option>
+          		<option value="Minneapolis">Minneapolis</option>
+          		<option value="Raleigh-Durham">Raleigh-Durham</option>
+          		<option value="Boston">Boston</option>
+          		<option value="Detroit">Detroit</option>
+          		<option value="San Francisco">San Francisco</option>
+			</select>
+</div>
+		</td>
+      <td width="13%"><div id="sesh1">
+        	<p>Session 1?</p>
+        	<select id="firstSession" class="selector">
+          		<option value="Denver">Denver</option>
+          		<option value="Phoenix">Phoenix</option>
+          		<option value="New Orleans">New Orleans</option>
+          		<option value="HOME" selected>N/A</option>
+		  </select></div></td>
+      <td width="13%"><div id="sesh2">
+        	<p>Session 2?</p>
+        	<select id="secondSession" class="selector">
+         		<option value="Albuquerque">Albuquerque</option>
+          		<option value="Atlanta">Atlanta</option>
+          		<option value="Baltimore">Baltimore</option>
+          		<option value="San Francisco">San Francisco</option>
+          		<option value="St. Louis">St. Louis</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+
+      <td width="13%"><div id="sesh3">
+        	<p>Session 3?</p>
+        	<select id="thirdSession" class="selector">
+          		<option value="Boston">Boston</option>
+          		<option value="Dallas Fort-Worth">Dallas Fort-Worth</option>
+          		<option value="Miami">Miami</option>
+          		<option value="Los Angeles">Los Angeles</option>
+          		<option value="Tulsa">Tulsa</option>
+          		<option value="Detroit">Detroit</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+      <td width="13%"><div id="sesh4">
+        	<p>Session 4?</p>
+        	<select id="fourthSession" class="selector">
+          		<option value="Austin">Austin</option>
+          		<option value="Buffalo">Buffalo</option>
+          		<option value="Minneapolis">Minneapolis</option>
+          		<option value="Raleigh-Durham">Raleigh-Durham</option>
+          		<option value="Philadelphia">Philadelphia</option>
+          		<option value="Portland">Portland</option>
+          		<option value="Seattle">Seattle</option>
+          		<option value="Omaha">Omaha</option>
+          		<option value="Nashville">Nashville</option>
+          		<option value="Los Angeles">LA Level 3</option>
+          		<option value="St. Louis">STL Level 3</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+      <td width="13%"><div id="sesh5">
+        	<p>Session 5?</p>
+        	<select id="fifthSession" class="selector">
+          		<option value="New York">New York</option>
+          		<option value="Chicago">Chicago</option>
+          		<option value="Los Angeles">LA Level 3</option>
+          		<option value="St. Louis">STL Level 3</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+    </tr>
+  </tbody>
+</table>
+		<table class="mobile" width="100%">
+  <tbody>
+    <tr>
+      <td><div id="home">
+			<p>Where are you from?</p>
+			<select id="homeCityMobile" class="selector">
+    			<option value="New York">New York</option>
+          		<option value="Chicago">Chicago</option>
+          		<option value="Los Angeles" selected>Los Angeles</option>
+          		<option value="St. Louis">St. Louis</option>
+          		<option value="Austin">Austin</option>
+          		<option value="Minneapolis">Minneapolis</option>
+          		<option value="Raleigh-Durham">Raleigh-Durham</option>
+          		<option value="Boston">Boston</option>
+          		<option value="Detroit">Detroit</option>
+          		<option value="San Francisco">San Francisco</option>
+			</select>
+</div>
+</tr>
+<tr>
+		</td>
+      <td><div id="sesh1">
+        	<p>Session 1?</p>
+        	<select id="firstSessionMobile" class="selector">
+          		<option value="Denver">Denver</option>
+          		<option value="Phoenix">Phoenix</option>
+          		<option value="New Orleans">New Orleans</option>
+          		<option value="HOME" selected>N/A</option>
+		  </select></div></td>
+		  </tr>
+<tr>
+      <td><div id="sesh2">
+        	<p>Session 2?</p>
+        	<select id="secondSessionMobile" class="selector">
+         		<option value="Albuquerque">Albuquerque</option>
+          		<option value="Atlanta">Atlanta</option>
+          		<option value="Baltimore">Baltimore</option>
+          		<option value="San Francisco">San Francisco</option>
+          		<option value="St. Louis">St. Louis</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+</tr>
+<tr>
+
+      <td><div id="sesh3">
+        	<p>Session 3?</p>
+        	<select id="thirdSessionMobile" class="selector">
+          		<option value="Boston">Boston</option>
+          		<option value="Dallas Fort-Worth">Dallas Fort-Worth</option>
+          		<option value="Miami">Miami</option>
+          		<option value="Los Angeles">Los Angeles</option>
+          		<option value="Tulsa">Tulsa</option>
+          		<option value="Detroit">Detroit</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+</tr>
+<tr>
+      <td><div id="sesh4">
+        	<p>Session 4?</p>
+        	<select id="fourthSessionMobile" class="selector">
+          		<option value="Austin">Austin</option>
+          		<option value="Buffalo">Buffalo</option>
+          		<option value="Minneapolis">Minneapolis</option>
+          		<option value="Raleigh-Durham">Raleigh-Durham</option>
+          		<option value="Philadelphia">Philadelphia</option>
+          		<option value="Portland">Portland</option>
+          		<option value="Seattle">Seattle</option>
+          		<option value="Omaha">Omaha</option>
+          		<option value="Nashville">Nashville</option>
+          		<option value="Los Angeles">LA Level 3</option>
+          		<option value="St. Louis">STL Level 3</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+</tr>
+<tr>
+      <td><div id="sesh5">
+        	<p>Session 5?</p>
+        	<select id="fifthSessionMobile" class="selector">
+          		<option value="New York">New York</option>
+          		<option value="Chicago">Chicago</option>
+          		<option value="Los Angeles">LA Level 3</option>
+          		<option value="St. Louis">STL Level 3</option>
+          		<option value="HOME" selected>N/A</option>
+        	</select>
+</div></td>
+    </tr>
+  </tbody>
+</table>
+
+		</div>
+		<button onclick="myLocations()" class="desktop"><h2>Check in!</h2></button>
+		<button onclick="myLocationsMobile()" class="mobile"><h2>Check in!</h2></button>
+        	<!--<button onclick="myLocations()" class="britney"></button>-->
+        	<script src="https://static.tumblr.com/weyiada/XnGpm2ieb/script.js"></script>
+            
+<br>
+<!--<div onclick="myLocations()" class="bp">-->
+<!--<h2 class="ticketText">Check in!</h2>-->
+<!--</div>-->
+</wrapper>
+    </body>
+    
+    <!--This belongs to Dominique Demetz and Sofia Ongele pls don't steal it thanks-->
+    
+</html>
